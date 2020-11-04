@@ -13,4 +13,10 @@ $sql .= "PRIMARY KEY (codigo)";
 $sql .= ");";
 banco($sql);
 echo "<p>DB:Tabela usuario criada...</p>";
+
+$sql = "INSERT INTO usuario (nome, email, senha)";
+$sql .= "VALUES ('Fulano de tal', 'fulano@emamil.com', '1'); ";
+
+banco($sql);
+echo "<p>DB:Tabela usuario populada...</p>";
 ?>
